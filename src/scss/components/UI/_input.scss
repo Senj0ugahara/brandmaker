@@ -1,0 +1,10 @@
+.input {
+  position: relative;
+  width: 100%;
+  padding: 14px 0 14px 48px;
+  border: 1px solid #4141401A;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,216 @@
+.form {
+  @media (max-width: 1199.98px) {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+
+  &-delivery {
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 48px;
+      height: 42px;
+      background-image: url('../resources/images/icons/delivery.svg');
+      background-repeat: no-repeat;
+
+      @media (max-width: 768.98px) {
+        top: initial;
+        left: initial;
+        bottom: 6px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+      }
+    }
+
+    &__inner {
+      width: 342px;
+      margin-left: auto;
+      padding: 13px 0 14px;
+      background: var(--color-light-gray);
+
+      @media (max-width: 768.98px) {
+        width: 100%;
+        margin-left: 0;
+        padding: 6px 55px 7px 18px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+      }
+    }
+  }
+
+  &-btn {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  &-dops {
+    margin-bottom: 8px;
+    border: 1px solid #4141401A;
+
+    &__remark {
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: right;
+    }
+  }
+
+  &-dop {
+    display: flex;
+    align-items: center;
+    padding: 13px 11px;
+
+    &:nth-child(2n) {
+      background: var(--color-light-gray);
+    }
+
+    &__index {
+      width: 21px;
+      height: 21px;
+      background: var(--color-yellow);
+      border-radius: 50%;
+      text-align: center;
+
+      span {
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 17px;
+        text-align: center;
+      }
+    }
+
+    &__name {
+      width: 150px;
+      margin-left: 8px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    &__price {
+      margin-left: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+    }
+
+    &__count {
+      margin-left: auto;
+    }
+  }
+
+  &-price {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__total {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+
+      span {
+        display: block;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+      }
+    }
+
+    &__link {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-decoration: underline;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+
+    &__none-quantity {
+      max-width: 200px;
+      padding: 11px 8px 11px 14px;
+      background: linear-gradient(0deg, rgba(252, 63, 29, 0.16), rgba(252, 63, 29, 0.16)),
+                  linear-gradient(0deg, rgba(252, 63, 29, 0.04), rgba(252, 63, 29, 0.04));
+      border: 1px solid #FC3F1D29;
+
+      p {
+        position: relative;
+        padding-right: 29px;
+        font-size: 10px;
+        font-weight: 450;
+        line-height: 13px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 24px;
+          height: 24px;
+          background-image: url('../resources/images/icons/arrow-up.svg');
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  &-feedback {
+    p {
+      position: relative;
+      margin-bottom: 4px;
+      padding-left: 25px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        background-image: url('../resources/images/icons/question.svg');
+        background-repeat: no-repeat;
+      }
+    }
+
+    a {
+      padding-left: 25px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      text-decoration: underline;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}

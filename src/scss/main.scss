@@ -1,0 +1,15 @@
+// Базовые подключения
+@import "fonts";
+@import "settings";
+@import "vars";
+
+// Подключения компонентов страницы UI
+@import "./components/UI/_brandcrumbs";
+@import "./components/UI/_form";
+@import "./components/UI/_table";
+@import "./components/UI/_dialog";
+@import "./components/UI/_button";
+@import "./components/UI/_input";
+
+// Подключения компонентов страницы (большие)
+@import "./components/cabinet";

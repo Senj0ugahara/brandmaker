@@ -1,0 +1,42 @@
+.breadcrumbs {
+  margin-bottom: 32px;
+  display: flex;
+
+  @media (max-width: 991.98px) {
+    white-space: nowrap;
+  }
+
+  &-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+      padding-right: 18px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 21px;
+        background-image: url('../resources/images/icons/arrow-right.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &-link {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: underline;
+
+    &_active {
+      text-decoration: none;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
